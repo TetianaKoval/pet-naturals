@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Naturals</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo">
+          <img class="header__logo-img" src="/images/header-logo.webp" alt="pet naturals logo">
+        </a>
+
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li><a data-goto=".right-part" href="#order" class="menu__link">Order</a></li>
+              <li><a data-goto=".page__section-2" href="#about" class="menu__link">About</a></li>
+              <li><a data-goto=".page__section-3" href="#results" class="menu__link">Results</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__section page__section-1">
+        <div class="page__container container">
+          <h1 class="page__title">Pet Naturals of Vermont, Calming, For Cats</h1>
+          <div class="page__main-section main-section">
+            <div class="main-section__left-part left-part">
+              <div class="left-part__title">
+                Your cat deserves the best pet supplement the world has to offer. That's what's in the package.
+              </div>
+              <div class="left-part__list">
+                <ul>
+                  <li class="left-part__list-item">Features a patented calming blend</li>
+                  <li class="left-part__list-item">Doesn’t contain herbal ingredients</li>
+                  <li class="left-part__list-item">Helps manage everyday stress</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="main-section__center-part center-part">
+              <div class="center-part__image">
+                <img src="./images/pet-naturals-calming.webp" alt="pet naturals calming package">
+              </div>
+            </div>
+
+            <div class="main-section__right-part right-part">
+              <div class="timer__bg">
+                <svg class="timer__shaddow" width="100%" height="100%" viewBox="0 0 270 200" preserveAspectRatio="none">
+                  <defs>
+                    <filter id="filtershadow" width="160%" height="160%">
+                      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+                    </filter>
+                    <mask>
+                      <polygon id="shaddow" fill="white" points="0 90, 50 100, 100 90, 100 0, 0 0" stroke="none"
+                        stroke-width="1" />
+                    </mask>
+                  </defs>
+                  <g id="img">
+                    <polygon transform="translate(0, 0)" fill="black"
+                    points="0,170 135,190 270,170 270,0 0,0" stroke="none"
+                    filter="url(#filtershadow)" />
+                  </g>
+                </svg>
+
+                
+              </div>
+
+              <div class="timer__text">
+                <span class="timer__title">Time left</span>
+                <div id="timer" class="timer__time-left">2:00:00</div>
+                <div class="timer__prices prices">
+                  <div class="prices__price prices__price--old">120uah</div>
+                  <div class="prices__price prices__price--new">60uah</div>
+                </div>
+              </div>
+
+              <div class="right-part__form-container form-container" id="order">
+                <form id="orderForm" class="order__form">
+                  <div class="form-group">
+                    <input class="form__input" type="text" id="name" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+
+                    <input class="form__input" type="text" id="phone" name="phone" placeholder="+38(0__)___-__-__" required>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="form__button">Order</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="right-part__date">
+                Order date: 
+                <span id="date"></span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+      <section class="page__section page__section-2" id="about">
+        <div class="page__container container">
+          <h2 class="title-2  title-2--gradient">From the manufacturer</h2>
+          <div class="page__preferences preferences">
+             <div class="preferences__preference preference">
+                <div class="preference__image">
+                  <img src="./images/cat.webp" alt="sleeping cat">
+                </div>
+                <div class="preference__description">
+                  <h3 class="preference__title">Keep Calm and Carry On</h3>
+                  <div class="preference__text">Are you searching for a better way to ease your pet’s separation anxiety or stress? Calming chews help relieve
+                    pet stress without corn, wheat or artificial ingredients. </div>
+                </div>
+             </div>
+
+             <div class="preferences__preference preference">
+              <div class="preference__image">
+                <img src="./images/lily.webp" alt="lily">
+              </div>
+              <div class="preference__description">
+                <h3 class="preference__title">Peace of Mind</h3>
+                <div class="preference__text">Pet Naturals of Vermont’s research-backed formula makes it safe to double or triple the amount in times of added stress.</div>
+              </div>
+           </div>
+
+           <div class="preferences__preference preference">
+            <div class="preference__image">
+              <img src="./images/fish.webp" alt="2 fishes">
+            </div>
+            <div class="preference__description">
+              <h3 class="preference__title">More than a Tasty Treat</h3>
+              <div class="preference__text">Don’t let its satisfying chicken liver flavor fool you. Technically, Calming isn’t a treat but it sure tastes like one. Reward your best buddy with a Calming chew.</div>
+            </div>
+         </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section page__section-3 section-3" id="results">
+        <div class="page__container container">
+          <h2 class="title-2 title-2--green">Best Uses for Calming Chews</h2>
+           <div class="section-3__description">
+            
+            <div class="section-3__text">
+              <svg class="section-3__text-bg" width="759" height="354" viewBox="0 0 759 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10H665.554L748.825 174.83L665.485 344H10L10 10V10Z" stroke="#D4DF6D" stroke-width="20"/>
+              </svg>
+              <p>
+                Car rides. Vet visits. Thunderstorms. Boarding. Parties. These are just a handful of times when Calming chews may come in handy. Does your dog hate to be left home alone? Does your cat love hiding under the bed? Serve up a Calming chew to help soothe your furry pal’s anxiety and make your life easier, too!
+              </p>
+              <p>
+                For Best Results:
+              </p>
+
+              <p>
+                We recommend administering Calming chews 30 minutes prior to a stressful event. The 30-minute activation period gives you a chance to increase dosage if you’re not seeing expected results. Calming is safe for unique stress inducing events and for long-term use to help manage everyday stress.
+              </p>
+            </div>
+            <div class="section-3-image">
+              <img src="./images/cat-with-doctor.webp" alt="cat with doctor">
+            </div>
+
+           </div>
+          
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/mask.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
